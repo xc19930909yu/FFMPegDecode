@@ -1,3 +1,7 @@
+
+项目运行环境Xcode13.2.1   iOS9.0以上
+
+
 #FFMpeg编译iOS的静态库，支持armv7,arm64架构，具体的编译步骤以及使用的脚本文件如下：
 
 关于FFMpeg在iOS下的编译可以参考https://www.jianshu.com/p/2b373cdf3bb8，编译脚本用的https://github.com/kewlbear/FFmpeg-iOS-build-script上的，
@@ -11,6 +15,9 @@
 ./build-ffmpeg.sh armv7 x86_64
 从单独的thin库合并出fat库
  ./build-ffmpeg.sh lipo
+
+
+项目使用到的ffmpeg交叉编译shell文件和ffmpeg4.3.1源代码在FFMpeg-Build文件夹中
 
 ffmpeg解码把音频aac解码到pcm,ffmpeg的编译版本为4.3.1，可以生成fat版本和thin版本。
 
